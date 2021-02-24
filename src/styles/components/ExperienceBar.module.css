@@ -20,10 +20,14 @@
   height: 4px;
   border-radius: 4px;
   background-color: var(--green);
+
+  transition: width 1.5s;
 }
 
 span.currentExperience {
   position: absolute;
   top: 12px;
   transform: translateX(-50%);
+
+  transition: left 1.5s;
 }
