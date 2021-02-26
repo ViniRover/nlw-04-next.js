@@ -48,7 +48,7 @@ You can clone this project using the command:
     npm run-script dev
  ```
  
- If you want to test before the steps, you can access: [LetsMove](https://letsmove.vercel.app/) here.
+ If you want to test before the steps, you can access: [LetsMove](https://letsmove-5drarymmv-vinirover.vercel.app/) here.
  
  
  
