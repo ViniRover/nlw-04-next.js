@@ -2,7 +2,7 @@
 
 ## Description
 
-Application developed for people who stay a long time on their chair. A countdown that fire an exercise challenge to complete after 
+Application developed for people who stay a long time on their chair and in front of a screen. A countdown that fire an exercise challenge to complete after 
 a period of time.
 
 ![Image of application](https://github.com/ViniRover/nlw-04-next.js/blob/main/githubimages/image02.png)
