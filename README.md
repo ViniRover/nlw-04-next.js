@@ -5,6 +5,8 @@
 Application developed for people who stay a long time on their chair. A countdown that fire an exercise challenge to complete after 
 a period of time.
 
+![Image of application](https://github.com/ViniRover/nlw-04-next.js/blob/main/githubimages/image02.png)
+
 ## How to use
 
 You can clone this project using the command:
@@ -41,8 +43,10 @@ You can clone this project using the command:
  
  If you want to test before the steps, you can access: [LetsMove](https://letsmove.vercel.app/) here.
  
-<<<<<<< HEAD
- ## Showing the App
-=======
- ## Showing the App
->>>>>>> fc7dd0d2703c4b4848c8da1a447eb8f3ba0a3038
+ ## Showing more
+ 
+ ![Begin image](https://github.com/ViniRover/nlw-04-next.js/blob/main/githubimages/image01.png)
+ ![Image of modal](https://github.com/ViniRover/nlw-04-next.js/blob/main/githubimages/image03.png)
+
+
+
