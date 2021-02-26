@@ -7,6 +7,13 @@ a period of time.
 
 ![Image of application](https://github.com/ViniRover/nlw-04-next.js/blob/main/githubimages/image02.png)
 
+## Used technologies
+
+- [ReactJS](https://pt-br.reactjs.org/docs/getting-started.html)
+- [Next.js](https://nextjs.org/docs)
+- [Vercel CLI](https://vercel.com/docs)
+
+
 ## How to use
 
 You can clone this project using the command:
@@ -42,6 +49,8 @@ You can clone this project using the command:
  ```
  
  If you want to test before the steps, you can access: [LetsMove](https://letsmove.vercel.app/) here.
+ 
+ 
  
  ## Showing more
  
