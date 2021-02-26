@@ -11,21 +11,18 @@ You can clone this project using the command:
 
  ```
     git clone https://github.com/ViniRover/nlw-04-next.js.git
-    
  ```
  
  In the terminal to install all dependencies, for yarn:
  
  ```
-    yarn
-    
+    yarn  
  ```
  
  And for npm:
  
  ```
     npm install
-    
  ```
  
  Then to start the application just use:
@@ -33,7 +30,6 @@ You can clone this project using the command:
   
  ```
     yarn dev
-    
  ```
  
  Or:
@@ -41,7 +37,8 @@ You can clone this project using the command:
   
  ```
     npm run-script dev
-    
  ```
  
  If you want to test before the steps, you can access: [LetsMove](https://letsmove.vercel.app/) here.
+ 
+ ## Showing the App
