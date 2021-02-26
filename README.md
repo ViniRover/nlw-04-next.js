@@ -41,4 +41,8 @@ You can clone this project using the command:
  
  If you want to test before the steps, you can access: [LetsMove](https://letsmove.vercel.app/) here.
  
+<<<<<<< HEAD
  ## Showing the App
+=======
+ ## Showing the App
+>>>>>>> fc7dd0d2703c4b4848c8da1a447eb8f3ba0a3038
