@@ -30,7 +30,7 @@ export default function Home({
     >
       <div className={styles.container}>
         <Head>
-          <title>Início | move.it</title>
+          <title>Home | LetsMove</title>
         </Head>
         <ExperienceBar />
         <CountdownProvider>
