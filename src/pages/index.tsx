@@ -6,10 +6,10 @@ import { ExperienceBar } from "../components/ExperienceBar";
 import { Profile } from "../components/Profile";
 import { ChallengeBox } from "../components/ChallengeBox";
 
-import styles from '../styles/pages/Home.module.css';
 import { CountdownProvider } from '../contexts/CountdownContext';
 import { GetServerSideProps } from 'next';
 import { ChallengesProvider } from '../contexts/ChallengesContext';
+import { Container } from '../styles/pages/Home';
 
 interface HomeProps {
   level: number;
@@ -28,7 +28,7 @@ export default function Home({
       challengesCompleted={challengesCompleted}
       currentExperience={currentExperience}
     >
-      <div className={styles.container}>
+      <Container>
         <Head>
           <title>Home | LetsMove</title>
         </Head>
@@ -45,7 +45,7 @@ export default function Home({
             </div>
           </section>
         </CountdownProvider>
-      </div>
+      </Container>
     </ChallengesProvider>
   )
 }
