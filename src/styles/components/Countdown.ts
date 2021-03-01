@@ -11,7 +11,7 @@ const ButtonStyleCountdown = css`
 
   border: 0;
   border-radius: 5px;
-  
+
   font-size: 1.25rem;
   font-weight: 600;
 
@@ -37,23 +37,24 @@ export const CountdownContainer = styled.div`
     border-radius: 5px;
     font-size: 8.5rem;
     text-align: center;
-
-    span {
-      flex: 1;
-    }
-
-    span:first-child {
-      border-right: 1px solid #f0f1f3;
-    }
-
-    span:last-child {
-      border-left: 1px solid #f0f1f3;
-    }
   }
 
   > span {
     font-size: 6.25rem;
     margin: 0 0.5rem;
+  }
+`;
+
+export const CountdownNumbers = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+
+  button {
+    border: 0;
+    background: var(--white);
+    color: var(--title);
   }
 `;
 
