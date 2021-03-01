@@ -53,7 +53,7 @@ export const CountdownNumbers = styled.div`
 
   button {
     border: 0;
-    background: var(--white);
+    background: transparent;
     color: var(--title);
   }
 `;
