@@ -45,13 +45,15 @@ export const GithubLogin = styled.div`
   }
 `;
 
-export const InputSection = styled.div`
-  display: flex;
+export const InputForm = styled.div`
+  form {
+    display: flex;
+  }
 
   input {
     background: linear-gradient(90deg, #4953B8 0%, rgba(73, 83, 184, 0.2) 100%);
 
-    color: var(--gray);
+    color: var(--white);
     font-weight: 400;
     font-size: 1.25rem;
 

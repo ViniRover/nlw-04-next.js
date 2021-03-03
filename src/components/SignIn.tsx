@@ -1,7 +1,26 @@
-import { LoginSection, GithubLogin, InputSection } from '../styles/components/SignIn';
+import { useRef } from 'react';
+import { Form } from '@unform/web';
+import { useRouter } from 'next/router';
+
+import { LoginSection, GithubLogin, InputForm } from '../styles/components/SignIn';
 import { FaGithub, FaArrowRight } from 'react-icons/fa';
+import Input from './common/Input';
+import Cookies from 'js-cookie';
+
+interface SubmitData {
+  username: string;
+}
 
 export function SignIn() {
+  const formRef = useRef();
+  const router = useRouter();
+
+  function handleSubmit({ username }: SubmitData) {
+    Cookies.set('username', username);
+
+    router.push('/dashboard');
+  }
+
   return(
     <section>
         <div>
@@ -15,12 +34,18 @@ export function SignIn() {
               <FaGithub size={30} />
               <p>Please log in with your Github to begin</p>
             </div>
-            <InputSection>
-              <input type="text" placeholder="Type your username"/>
-              <button type="button">
-                <FaArrowRight size={20}/>
-              </button>
-            </InputSection>
+            <InputForm>
+              <Form ref={formRef} onSubmit={handleSubmit} >
+                <Input
+                  placeholder="Type your username"
+                  type="text"
+                  name="username"
+                />
+                <button type="submit" >
+                  <FaArrowRight size={20}/>
+                </button>
+              </Form>
+            </InputForm>
           </GithubLogin>
         </LoginSection>
       </section>

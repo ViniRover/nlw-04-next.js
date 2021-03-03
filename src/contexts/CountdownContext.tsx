@@ -24,7 +24,7 @@ export function CountdownProvider({ children }: CountdownProvideProps) {
   const [time, setTime] = useState(25 * 60);
   const [isActive, setIsActive] = useState(false);
   const [hasFinished, setHasFinished] = useState(false);
-  const [numberChosen, setNumberChosen] = useState(0);
+  const [numberChosen, setNumberChosen] = useState(-1);
 
   const minutes = Math.floor(time / 60);
   const seconds = time % 60;
@@ -38,7 +38,7 @@ export function CountdownProvider({ children }: CountdownProvideProps) {
     setIsActive(false);
     setHasFinished(false);
     setTime(numberChosen);
-    setNumberChosen(0);
+    setNumberChosen(-1);
   }
 
   function changeCountdownTime(event: MouseEvent) {
@@ -59,7 +59,6 @@ export function CountdownProvider({ children }: CountdownProvideProps) {
     }
 
     if(buttonId === 'minuteLeftUp') {
-      setNumberChosen(time);
       setTime(time+(600));
     } else if(buttonId === 'minuteLeftDown') {
       setTime(time-(600));
@@ -83,13 +82,13 @@ export function CountdownProvider({ children }: CountdownProvideProps) {
       countdownTimeout = setTimeout(() => {
         setTime(time-1);
         setNumberChosen(numberChosen+1);
-      }, 1000)
+      }, 1000);
     } else if(isActive && time === 0) {
       setHasFinished(true);
       setIsActive(false);
       startNewChallenge();
     }
-  }, [isActive, time, numberChosen]);
+  }, [isActive, time]);
 
   return(
     <CountdownContext.Provider value={{
